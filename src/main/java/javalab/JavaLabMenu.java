@@ -85,6 +85,7 @@ public class JavaLabMenu {
                     "\ntoString de Question con opciones 1, 2, 3 y 4." +
                     "\n5. Retirarse");
 
+
             try {
                 option = scanner.nextInt();
                 switch (option) {
@@ -104,6 +105,23 @@ public class JavaLabMenu {
             }
         }
         System.out.println("El juego ha finalizado.");
+    }
+
+    //Metodo para jugar
+
+    public static void juego(){
+        //arregloAux
+
+        Question auxPre[5];
+
+
+        for (int i = 0; i < auxPre.length; i++){
+            auxPre[i] = Game.
+        }
+        do {
+            System.out.println();
+        }while (true);
+
     }
 
     /**
