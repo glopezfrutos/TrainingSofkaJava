@@ -1,4 +1,4 @@
-package JavaLab;
+package javalab;
 
 public class Question {
 }
