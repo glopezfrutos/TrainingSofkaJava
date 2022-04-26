@@ -10,17 +10,51 @@ public class Player {
     private String name;
 
     /**
+     * Puntaje obtenido
+     */
+    private int score;
+
+    /**
+     * Nivel
+     */
+    private int level;
+
+    /**
      * Constructor del Objeto Player
      * @param name
      */
     public Player(String name) {
         this.name = name;
+        this.score = 0;
+        this.level = 0;
+        GameLogic.activePlayerIndex++;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public void levelUp() {
+        this.level++;
     }
 
     /**
-     * @return Devuelve el nombre del jugador
+     * @return Devuelve el puntaje del jugador
      */
-    public String getName() {
-        return name;
+    public int getScore() {
+        return score;
+    }
+
+    /**
+     * @return Devuelve el nivel del jugador
+     */
+    public int getLevel() {
+        return level;
+    }
+
+    @Override
+    public String toString() {
+        return "\nJugador: " + name +
+                "\nPuntaje" + score;
     }
 }
